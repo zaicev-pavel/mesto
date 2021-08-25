@@ -1,0 +1,9 @@
+.header_margin_standart {
+  margin: 45px auto 0;
+}
+
+@media screen and (max-width: 670px) {
+  .header_margin_standart {
+    margin: 28px auto 0;
+  }
+}

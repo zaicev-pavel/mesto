@@ -1,0 +1,11 @@
+.form-profile__text {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  width: 358px;
+  padding-bottom: 13px;
+}
+
+@media screen and (max-width: 670px) {
+  .form-profile__text {
+    width: 238px;
+  }
+}

@@ -1,0 +1,9 @@
+.form-profile__text_type_name {
+  margin-top: 54px;
+}
+
+@media screen and (max-width: 670px) {
+  .form-profile__text_type_name {
+    margin-top: 75px;
+  }
+}
