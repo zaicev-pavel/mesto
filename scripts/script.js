@@ -7,18 +7,16 @@ let formElement = document.querySelector('.form-profile');
 let nameInput = document.querySelector('.form-profile__text_type_name');
 let jobInput = document.querySelector('.form-profile__text_type_job');
 
-
+/* функция открывает popup и заполняет input */
 function togglePopup() {
+  if (!popup.classList.contains('popup_opened')){
+    nameInput.value = nameTitle.textContent;
+    jobInput.value = jobTitle.textContent;
+  }
   popup.classList.toggle('popup_opened');
-  nameInput.value = nameTitle.textContent
-  jobInput.value = jobTitle.textContent
 }
 
-openPopupButton.addEventListener('click', togglePopup);
-closePopupButton.addEventListener('click', togglePopup);
-
-
-
+/* функция закрывает popup и переписывает изменения в профиль */
 function formSubmitHandler (evt) {
     evt.preventDefault();
     nameTitle.textContent = nameInput.value;
@@ -26,5 +24,8 @@ function formSubmitHandler (evt) {
     togglePopup();
 }
 
+
+openPopupButton.addEventListener('click', togglePopup);
+closePopupButton.addEventListener('click', togglePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 

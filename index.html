@@ -13,84 +13,96 @@
 </head>
 
 <body class="page">
-  <header class="header header_margin_standart">
+  <header class="header page__header">
     <img src="./images/header-logo-white.svg" alt="логотип" class="header__logo">
   </header>
 
-  <main class="content">
-    <section class="profile profile_margin_standart">
+  <main class="content page__content">
+    <section class="profile">
       <div class="profile__area">
         <div class="profile__avatar"></div>
         <div class="profile__info">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
-          <button class="profile__edit-btn button">
+          <button type="button" class="profile__edit-btn button">
             <img src="./images/pencil.svg" alt="логотип" class="profile__edit-btn-image">
           </button>
           <p class="profile__subtitle">Исследователь океана</p>
         </div>
       </div>
-      <button class="profile__add-btn button">
+      <button type="button" class="profile__add-btn button">
         <img src="./images/plus.svg" alt="логотип" class="profile__add-btn-image">
       </button>
     </section>
 
-    <section class="elements elements_margin_standart">
+    <section class="elements">
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-karachaevsc.jpg" alt="карачаевск">
         <div class="element__group-title">
           <h2 class="element__title">Карачаевск</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-elbrus.jpg" alt="эльбрус">
         <div class="element__group-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-dombai.jpg" alt="домбай">
         <div class="element__group-title">
           <h2 class="element__title">Домбай</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-elbrus.jpg" alt="эльбрус">
         <div class="element__group-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-dombai.jpg" alt="домбай">
         <div class="element__group-title">
           <h2 class="element__title">Домбай</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
       <div class="element">
         <img class="element__image" src="./images/kirill-pershin-karachaevsc.jpg" alt="карачаевск">
         <div class="element__group-title">
           <h2 class="element__title">Карачаево-Черкеск</h2>
-          <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          <button type="button" class="element__button">
+            <img class="element__heart" src="./images/heart-disabled.svg" alt="сердечко">
+          </button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer footer_margin_standart">
+  <footer class="footer page__footer">
     <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
   </footer>
 
   <div class="popup">
     <div class="popup__container">
       <button type="button" class="popup__close button"></button>
-      <form class="form-profile">
+      <form class="form-profile" name="form-profile-redact">
         <h2 class="form-profile__title">Редактировать профиль</h2>
-        <input type="text" placeholder="Имя" class="form-profile__text form-profile__text_type_name input">
-        <input type="text" placeholder="Профессия" class="form-profile__text form-profile__text_type_job input">
+        <input type="text" name="name" placeholder="Имя" class="form-profile__text form-profile__text_type_name">
+        <input type="text" name="job" placeholder="Профессия" class="form-profile__text form-profile__text_type_job">
         <button type="submit" class="form-profile__submit-btn button">Сохранить</button>
       </form>
     </div>
